@@ -9,7 +9,7 @@
 -- Use this file to install and configure other such plugins.
 
 -- Make concise helpers for installing/adding plugins in two stages
-local add, later = MiniDeps.add, MiniDeps.later
+local add, now, later = MiniDeps.add, MiniDeps.now, MiniDeps.later
 local now_if_args = _G.Config.now_if_args
 
 -- Tree-sitter ================================================================
@@ -159,3 +159,12 @@ later(function() add('rafamadriz/friendly-snippets') end)
 --   -- Enable only one
 --   vim.cmd('color everforest')
 -- end)
+
+now(function()
+  add('navarasu/onedark.nvim')
+
+  require('onedark').setup {
+    style = 'darker'
+  }
+  require('onedark').load()
+end)
