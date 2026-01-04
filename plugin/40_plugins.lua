@@ -49,7 +49,6 @@ now_if_args(function()
     'lua',
     'vimdoc',
     'markdown',
-    'c',
     'cpp',
     'python',
     -- Add here more languages with which you want to use tree-sitter
