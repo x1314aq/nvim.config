@@ -59,8 +59,6 @@ now(function()
     -- Manage options in 'plugin/10_options.lua' for didactic purposes
     options = { basic = false },
     mappings = {
-      -- Create `<C-hjkl>` mappings for window navigation
-      windows = true,
       -- Create `<M-hjkl>` mappings for navigation in Insert and Command modes
       move_with_alt = true,
     },
